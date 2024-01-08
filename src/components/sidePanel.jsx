@@ -23,10 +23,12 @@ const sidePanel = () => {
 
   const toggleProducts = () => {
     setProducts(!products);
+    setCustomers(false);
   };
 
   const toggleCustomers = () => {
     setCustomers(!customers);
+    setProducts(false);
   };
 
   useEffect(() => {
@@ -53,13 +55,13 @@ const sidePanel = () => {
   return (
     <div className="w-52 border-r border-neutral-800">
       {/* Logo */}
-      <div className="flex pl-7 items-center gap-2 pb-5 border-r border-b border-neutral-800 rounded-br-3xl">
+      <div className="flex pl-7 items-center gap-2 pb-5 border-b border-neutral-800 rounded-br-3xl">
         <PiWindFill className="text-4xl" />
         <span className="font-extrabold text-lg">zephyr</span>
       </div>
 
       {/* tabs */}
-      <div className="flex flex-col h-[58vh] items-start overflow-hidden border-r border-b border-neutral-800 rounded-r-3xl">
+      <div className="flex flex-col h-[58vh] items-start overflow-hidden border-t border-b border-neutral-800 rounded-r-3xl">
         <Link
           to="/"
           className="flex pl-7 items-center gap-3  w-full pt-7 py-3 hover:bg-neutral-950 transition-all duration-300 ease-in-out"
@@ -234,7 +236,7 @@ const sidePanel = () => {
       </div>
 
       {/* logout and others*/}
-      <div className="flex flex-col items-start overflow-hidden border-r border-neutral-800 rounded-tr-3xl">
+      <div className="flex flex-col items-start overflow-hidden border-t border-neutral-800 rounded-tr-3xl">
         <button className="flex pl-7 items-center  w-full pt-7 pb-3 hover:bg-neutral-950 transition-all duration-300 ease-in-out">
           <span className="">Help</span>
         </button>
