@@ -30,13 +30,13 @@ const UserMenu = ({ name }) => {
       {/* menu */}
       {isMenuOpen && (
         <div className="absolute top-24 right-4 border border-neutral-800 rounded-2xl w-52 p-2">
-          <button className="w-full text-left text-sm text-neutral-300 hover:bg-neutral-800 hover:text-white py-3 px-5 rounded-lg transition-all duration-300 ease-in-out">
+          <button className="w-full text-left text-sm text-neutral-300 hover:bg-neutral-950 hover:text-white py-3 px-5 rounded-lg transition-all duration-300 ease-in-out">
             Profile
           </button>
-          <button className="w-full text-left text-sm text-neutral-300 hover:bg-neutral-800 hover:text-white py-3 px-5 rounded-lg transition-all duration-300 ease-in-out">
+          <button className="w-full text-left text-sm text-neutral-300 hover:bg-neutral-950 hover:text-white py-3 px-5 rounded-lg transition-all duration-300 ease-in-out">
             Settings
           </button>
-          <button className="w-full text-left text-sm text-neutral-300 hover:bg-neutral-800 hover:text-white py-3 px-5 rounded-lg transition-all duration-300 ease-in-out">
+          <button className="w-full text-left text-sm text-neutral-300 hover:bg-neutral-950 hover:text-white py-3 px-5 rounded-lg transition-all duration-300 ease-in-out">
             Logout
           </button>
         </div>
