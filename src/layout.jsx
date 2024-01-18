@@ -3,9 +3,9 @@ import WelcomeHeader from "./components/welcomeHeader";
 
 const layout = ({ children }) => {
   return (
-    <div className="flex gap-5 w-screen h-screen overflow-hidden p-7 pl-0 pb-0">
+    <div className="flex gap-5 w-screen h-screen overflow-hidden pt-10 pr-10">
       <SidePanel />
-      <div className="flex gap-5 flex-col">
+      <div className="flex gap-5 flex-col w-full">
         <WelcomeHeader />
         <div>{children}</div>
       </div>
