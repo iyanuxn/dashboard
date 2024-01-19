@@ -10,7 +10,7 @@ const welcomeHeader = () => {
         <span className="font-bold text-3xl tracking-tighter">
           Welcome back, {name}
         </span>
-        <span className="text-gray-400 text-sm">
+        <span className="text-neutral-400 text-sm">
           Here's what's happening with your store today.
         </span>
       </div>

@@ -11,3 +11,36 @@ body {
   background-blend-mode: multiply;
   color: #fefefe;
 }
+
+.hover\:increase {
+  background-image: url("./assets/increase.svg");
+  background-position: 10vw 2vw;
+  background-size: ;
+  background-repeat: no-repeat;
+}
+
+.hover\:increase:hover {
+  background-image: url("./assets/increase.svg");
+  background-position: 10vw 2vw;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  transition: all 0.3s ease-in-out;
+}
+
+.hover\:decrease {
+  background-image: url("./assets/decrease.svg");
+  background-position: 10vw -2vw;
+  background-size: ;
+  background-repeat: no-repeat;
+}
+
+.hover\:decrease:hover {
+  background-image: url("./assets/decrease.svg");
+  background-position: 10vw -2vw;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-blend-mode: hard-light;
+  transition: all 0.3s ease-in-out;
+}
+
